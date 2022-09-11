@@ -7,7 +7,10 @@ Battleship game is a web application that generates three ships and places them 
 fork the repo and clone it.
 run the server
 ```bash
+npm install
 cd into json-server-template
+cd db
+json-server --watch db.json
 
 npm run dev
 ```
