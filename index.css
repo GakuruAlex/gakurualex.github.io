@@ -1,0 +1,64 @@
+
+body, html {height:100%;}
+.container {
+    height: 95vh;
+    width: 95vw;
+    margin: 2rem auto;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-areas: "header header"
+                         "left main ";
+
+    grid-template-rows: 0.5fr 2.5fr ;
+    grid-template-columns: 3fr 2fr ;
+ }
+ .cell-1 {
+    background: deepskyblue;
+    grid-area: header;
+ }
+ .cell-2 {
+    background: orangered;
+    grid-area: left;
+ }
+ .cell-3 {
+    background-image: url(./images/BB61_USS_Iowa_BB61_broadside_USN.jpg);
+    grid-area: main;
+
+ }
+
+
+ .cell {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+ }
+
+
+
+ .battleshipGrid {
+    height:100%; overflow:hidden;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-height: 90vh;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: minmax(60px, auto) repeat(7, 60px);
+
+
+
+
+    }
+
+
+.battleshipGrid button{
+    border-radius: 8px;
+   font-size: 10px;
+}
+
+#gameplay{
+   font-size:20px;
+}
+#userName{
+font-size: 20px;
+}
